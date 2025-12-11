@@ -540,6 +540,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &868764691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868764693}
+  - component: {fileID: 868764692}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &868764692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868764691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331cb0005727be4459e78dfff7818793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 5123830194176290794, guid: b33a8382efb379941a9bf763c46fb9f5, type: 3}
+  - {fileID: 7073994653586738442, guid: ba7d863f193cde34faf182933c58a134, type: 3}
+  - {fileID: 7405286952189904940, guid: 2cfbd93ffa200994ba6b70f35348408a, type: 3}
+  animalIndex: 2
+--- !u!4 &868764693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868764691}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.5204697, y: 7.938204, z: 8.505871}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,12 +729,7 @@ MonoBehaviour:
   horizontalInput: 0
   speed: 10
   xRange: 10
-  projectilePrefab: {fileID: 2006873908}
---- !u!1 &2006873908 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6698292685433694490, guid: 7f2f6ab7b5bc72a48a16a8006840e3da, type: 3}
-  m_PrefabInstance: {fileID: 2728447884250130589}
-  m_PrefabAsset: {fileID: 0}
+  projectilePrefab: {fileID: 6698292685433694490, guid: 7f2f6ab7b5bc72a48a16a8006840e3da, type: 3}
 --- !u!1001 &798744002608418500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -926,3 +970,4 @@ SceneRoots:
   - {fileID: 798744002608418500}
   - {fileID: 6862130602774298438}
   - {fileID: 2728447884250130589}
+  - {fileID: 868764693}
